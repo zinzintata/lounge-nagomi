@@ -1,0 +1,2335 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lounge Nagomi（ラウンジ なごみ）| 徳島市富田町のナイトラウンジ</title>
+  <meta name="description" content="徳島市富田町のラウンジ なごみ。上品で落ち着いた大人の夜時間を。セット5,000円・飲み放題コースあり。月〜土 20:00〜翌1:00営業。">
+  <meta name="keywords" content="徳島 ラウンジ,徳島市 ラウンジ,徳島 富田町 ラウンジ,徳島 ナイト 飲み屋">
+  <meta property="og:title" content="Lounge Nagomi｜徳島・富田町のナイトラウンジ">
+  <meta property="og:description" content="上品で落ち着いた大人のためのラウンジ。はじめての方も、ゆっくりとお寛ぎください。セット5,000円・飲み放題コースあり。">
+  <meta property="og:type" content="website">
+  <!-- TODO: Replace placeholder URL with actual domain before launch -->
+  <link rel="canonical" href="https://lounge-nagomi.jp/">
+  <meta property="og:url" content="https://lounge-nagomi.jp/">
+  <meta property="og:image" content="https://lounge-nagomi.jp/3.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="Lounge Nagomi">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lounge Nagomi｜徳島・富田町のナイトラウンジ">
+  <meta name="twitter:description" content="上品で落ち着いた大人のためのラウンジ。セット5,000円・飲み放題コースあり。">
+  <meta name="twitter:image" content="https://lounge-nagomi.jp/3.jpg">
+  <link rel="icon" href="./1.jpg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+JP:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- TODO: Replace G-XXXXXXXXXX with actual GA4 Measurement ID before launch -->
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- LocalBusiness JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NightClub",
+    "name": "Lounge Nagomi",
+    "alternateName": "ラウンジ なごみ",
+    "description": "徳島市富田町に佇む落ち着いた大人のためのラウンジ。上品で親しみやすい空間で、女性・カップルも歓迎。",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "富田町2丁目9 アクティーファイブ2階",
+      "addressLocality": "徳島市",
+      "addressRegion": "徳島県",
+      "postalCode": "770-0915",
+      "addressCountry": "JP"
+    },
+    "telephone": "088-622-5518",
+    "url": "https://www.instagram.com/loung_nagomi/",
+    "sameAs": [
+      "https://www.instagram.com/loung_nagomi/",
+      "https://www.youtube.com/channel/UCgENyi1s6YYiiZ-xgAL_8Og"
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "20:00",
+        "closes": "01:00"
+      }
+    ],
+    "priceRange": "¥¥",
+    "servesCuisine": "ドリンク・ラウンジ",
+    "foundingDate": "2021-06"
+  }
+  </script>
+
+  <style>
+    /* ============================================================
+       1. CSS Custom Properties — Design Tokens
+       ============================================================ */
+    :root {
+      /* Backgrounds */
+      --color-bg:            #0a0a0a;
+      --color-bg-mid:        #111111;
+      --color-bg-card:       #161616;
+      --color-bg-overlay:    rgba(10, 10, 10, 0.72);
+
+      /* Primary: Champagne Gold */
+      --color-primary:       #c9a84c;
+      --color-primary-rgb:   201, 168, 76;
+      --color-primary-pale:  #e8d4a0;
+      --color-primary-deep:  #a07c2e;
+
+      /* Secondary: Bordeaux */
+      --color-secondary:     #6b1a2a;
+      --color-secondary-rgb: 107, 26, 42;
+
+      /* Text */
+      --color-text:          #f5f0e8;
+      --color-text-muted:    #8a8275;
+      --color-text-dim:      #4a4540;
+
+      /* Borders */
+      --color-border:        rgba(201, 168, 76, 0.20);
+      --color-border-hover:  rgba(201, 168, 76, 0.55);
+      --color-border-subtle: rgba(255, 255, 255, 0.05);
+      --color-divider:       rgba(245, 240, 232, 0.08);
+
+      /* Glow */
+      --glow-primary: 0 0 18px rgba(201, 168, 76, 0.35), 0 0 40px rgba(201, 168, 76, 0.12);
+      --glow-text:    0 0 12px rgba(201, 168, 76, 0.50);
+
+      /* Cursor */
+      --cursor-color:     #c9a84c;
+      --cursor-color-rgb: 201, 168, 76;
+
+      /* Glassmorphism */
+      --glass-bg:     rgba(22, 22, 22, 0.65);
+      --glass-border: 1px solid rgba(201, 168, 76, 0.15);
+
+      /* Fonts */
+      --font-display:  'Cormorant Garamond', Georgia, serif;
+      --font-heading:  'Noto Serif JP', serif;
+      --font-body:     'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+      --font-label:    'Cormorant Garamond', serif;
+
+      /* Typography Scale */
+      --fs-hero:    clamp(2.5rem, 10vw, 6rem);
+      --fs-h2:      clamp(1.75rem, 5vw, 3rem);
+      --fs-h3:      clamp(1.25rem, 3vw, 1.875rem);
+      --fs-eyebrow: clamp(0.625rem, 1.5vw, 0.75rem);
+      --fs-body:    clamp(0.875rem, 2vw, 1rem);
+      --fs-small:   0.75rem;
+
+      --ls-display: 0.25em;
+      --ls-heading: 0.15em;
+      --ls-eyebrow: 0.5em;
+      --ls-body:    0.05em;
+
+      --lh-display: 1.1;
+      --lh-heading: 1.6;
+      --lh-body:    1.8;
+
+      /* Animation */
+      --ease-cinematic: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-snap:      cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      --duration-slow:  0.9s;
+      --duration-medium: 0.5s;
+      --duration-fast:  0.25s;
+
+      /* Spacing */
+      --space-section:   clamp(5rem, 10vw, 9rem);
+      --space-content:   clamp(1.5rem, 5vw, 2.5rem);
+      --container-width: min(1200px, 92vw);
+    }
+
+    /* ============================================================
+       2. Reset & Base
+       ============================================================ */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    body {
+      font-family: var(--font-body);
+      background: var(--color-bg);
+      color: var(--color-text);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    ul, ol {
+      list-style: none;
+    }
+    button {
+      font-family: inherit;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* ============================================================
+       3. Technique A — [data-clip] clip-path reveal
+       ============================================================ */
+    [data-clip] {
+      overflow: hidden;
+      display: block;
+    }
+    [data-clip] .clip-inner {
+      display: block;
+      clip-path: inset(0 0 100% 0);
+      transform: translateY(12px);
+      transition:
+        clip-path 1.0s cubic-bezier(0.16, 1, 0.3, 1),
+        transform  1.0s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    [data-clip][data-delay="1"] .clip-inner { transition-delay: 0.12s; }
+    [data-clip][data-delay="2"] .clip-inner { transition-delay: 0.24s; }
+    [data-clip][data-delay="3"] .clip-inner { transition-delay: 0.36s; }
+    [data-clip].is-visible .clip-inner {
+      clip-path: inset(0 0 0% 0);
+      transform: translateY(0);
+    }
+    .h1-line {
+      display: block;
+      white-space: nowrap;
+    }
+
+    /* ============================================================
+       4. Technique B — [data-warp] scroll reveal
+       ============================================================ */
+    [data-warp] {
+      opacity: 0;
+      clip-path: inset(0 0 60% 0);
+      transform: translateY(28px);
+      transition:
+        opacity    var(--duration-slow) var(--ease-cinematic),
+        clip-path  var(--duration-slow) var(--ease-cinematic),
+        transform  var(--duration-slow) var(--ease-cinematic);
+    }
+    [data-warp="left"] {
+      opacity: 0;
+      clip-path: inset(0 100% 0 0);
+      transform: translateX(-28px);
+      transition:
+        opacity    var(--duration-slow) var(--ease-cinematic),
+        clip-path  var(--duration-slow) var(--ease-cinematic),
+        transform  var(--duration-slow) var(--ease-cinematic);
+    }
+    [data-warp].is-visible {
+      opacity: 1;
+      clip-path: inset(0 0 0% 0);
+      transform: translate(0);
+    }
+    [data-fade] {
+      opacity: 0;
+      transform: translateY(20px);
+      transition:
+        opacity   var(--duration-slow) var(--ease-cinematic),
+        transform var(--duration-slow) var(--ease-cinematic);
+    }
+    [data-fade].is-visible { opacity: 1; transform: translateY(0); }
+    [data-delay="1"] { transition-delay: 0.10s; }
+    [data-delay="2"] { transition-delay: 0.20s; }
+    [data-delay="3"] { transition-delay: 0.30s; }
+    [data-delay="4"] { transition-delay: 0.40s; }
+    [data-delay="5"] { transition-delay: 0.50s; }
+
+    /* ============================================================
+       5. Technique C — [data-stagger] word stagger
+       ============================================================ */
+    [data-stagger] .s-word {
+      display: inline-block;
+      overflow: hidden;
+      vertical-align: bottom;
+      margin-right: 0.2em;
+    }
+    [data-stagger] .s-word .s-inner {
+      display: inline-block;
+      clip-path: inset(0 0 100% 0);
+      transform: translateY(6px);
+      transition:
+        clip-path 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    [data-stagger].is-visible .s-word .s-inner {
+      clip-path: inset(0 0 0% 0);
+      transform: translateY(0);
+    }
+
+    /* ============================================================
+       6. Technique D — Loader
+       ============================================================ */
+    #loader {
+      position: fixed;
+      inset: 0;
+      z-index: 10000;
+      background: var(--color-bg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      transition: opacity 0.8s var(--ease-cinematic), visibility 0s 0.9s;
+    }
+    #loader.is-done {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    .loader__title {
+      font-family: var(--font-display);
+      font-size: clamp(4rem, 15vw, 10rem);
+      letter-spacing: 0.2em;
+      line-height: 1;
+      color: var(--color-primary);
+      overflow: hidden;
+    }
+    .loader__title span {
+      display: block;
+      animation: loaderSlideUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+    }
+    @keyframes loaderSlideUp {
+      from { clip-path: inset(0 0 100% 0); transform: translateY(24px); }
+      to   { clip-path: inset(0 0 0% 0);   transform: translateY(0); }
+    }
+    .loader__bar {
+      width: clamp(160px, 40vw, 280px);
+      height: 1px;
+      background: rgba(255, 255, 255, 0.06);
+      position: relative;
+      overflow: hidden;
+    }
+    .loader__bar::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--color-primary);
+      transform: scaleX(0);
+      transform-origin: left;
+      animation: loaderFill 1.8s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards;
+    }
+    @keyframes loaderFill { to { transform: scaleX(1); } }
+    .loader__sub {
+      font-size: 0.5625rem;
+      letter-spacing: 0.5em;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      animation: loaderFadeIn 0.4s ease 0.5s both;
+    }
+    @keyframes loaderFadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+    /* ============================================================
+       7. Technique E — Custom Cursor (desktop only)
+       ============================================================ */
+    @media (pointer: fine) {
+      html, a, button { cursor: none; }
+      #cursor { pointer-events: none; }
+    }
+    #cursor {
+      position: fixed;
+      inset: 0;
+      z-index: 9998;
+      pointer-events: none;
+    }
+    .cursor__ring {
+      position: fixed;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(var(--cursor-color-rgb), 0.65);
+      transform: translate(-50%, -50%);
+      transition: width 0.3s var(--ease-snap), height 0.3s var(--ease-snap), border-color 0.3s ease;
+      will-change: left, top;
+    }
+    .cursor__dot {
+      position: fixed;
+      width: 5px;
+      height: 5px;
+      background: var(--cursor-color);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 6px var(--cursor-color);
+      will-change: left, top;
+    }
+    body.cursor-hover .cursor__ring { width: 58px; height: 58px; border-color: rgba(var(--cursor-color-rgb), 1); }
+    body.cursor-click .cursor__ring { width: 18px; height: 18px; }
+
+    /* ============================================================
+       8. Technique F — Horizontal Scroll Track
+       ============================================================ */
+    .h-track-wrap { overflow: hidden; position: relative; }
+    .h-track {
+      display: flex;
+      gap: 1.25rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      cursor: grab;
+      padding: 0.5rem 0 2rem;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(201, 168, 76, 0.3) transparent;
+    }
+    .h-track::-webkit-scrollbar { height: 2px; }
+    .h-track::-webkit-scrollbar-track { background: transparent; }
+    .h-track::-webkit-scrollbar-thumb { background: rgba(201, 168, 76, 0.3); border-radius: 1px; }
+    .h-track__hint {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-family: var(--font-label);
+      font-size: 0.625rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      padding: 0.5rem 0 0;
+      opacity: 0.65;
+    }
+    .h-track.is-dragging { cursor: grabbing; user-select: none; }
+    .h-track-card {
+      flex: 0 0 min(340px, 78vw);
+      scroll-snap-align: start;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* ============================================================
+       9. Technique G — Gold gradient text
+       ============================================================ */
+    .text-gold {
+      background: linear-gradient(135deg,
+        var(--color-primary-deep) 0%,
+        var(--color-primary)      30%,
+        var(--color-primary-pale) 50%,
+        var(--color-primary)      70%,
+        var(--color-primary-deep) 100%
+      );
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+    .text-gold-shimmer {
+      background: linear-gradient(90deg,
+        var(--color-primary-deep) 0%,
+        var(--color-primary-pale) 25%,
+        var(--color-primary)      50%,
+        var(--color-primary-pale) 75%,
+        var(--color-primary-deep) 100%
+      );
+      background-size: 300% auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      animation: goldShimmer 4s linear infinite;
+    }
+    @keyframes goldShimmer {
+      0%   { background-position: 0% center; }
+      100% { background-position: 300% center; }
+    }
+
+    /* ============================================================
+       10. Technique H — Grain texture overlay
+       ============================================================ */
+    .grain { position: relative; }
+    .grain::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+      opacity: 0.10;
+      mix-blend-mode: overlay;
+      z-index: 1;
+    }
+
+    /* ============================================================
+       11. Section Divider (Technique J)
+       ============================================================ */
+    .section-divider {
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(201, 168, 76, 0.20) 20%,
+        rgba(201, 168, 76, 0.55) 50%,
+        rgba(201, 168, 76, 0.20) 80%,
+        transparent 100%
+      );
+    }
+    .deco-line {
+      width: 48px;
+      height: 1px;
+      background: var(--color-primary);
+      margin: 0 auto 1.5rem;
+    }
+    .deco-line--left { margin-left: 0; }
+
+    /* ============================================================
+       12. Header / Navigation
+       ============================================================ */
+    .site-header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: clamp(1rem, 3vw, 1.5rem) clamp(1.25rem, 5vw, 2.5rem);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background 0.5s ease, backdrop-filter 0.5s ease, padding 0.4s ease;
+    }
+    .site-header.is-scrolled {
+      background: rgba(10, 10, 10, 0.88);
+      -webkit-backdrop-filter: blur(16px) saturate(1.4);
+      backdrop-filter: blur(16px) saturate(1.4);
+      border-bottom: 1px solid var(--color-border);
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+    .site-header__logo {
+      font-family: var(--font-display);
+      font-size: clamp(1.125rem, 3vw, 1.5rem);
+      letter-spacing: 0.25em;
+      color: var(--color-primary);
+      text-decoration: none;
+      line-height: 1;
+    }
+    .site-header__nav {
+      display: flex;
+      gap: clamp(1.5rem, 3vw, 2.5rem);
+      align-items: center;
+    }
+    .site-header__nav a {
+      font-family: var(--font-label);
+      font-size: 0.6875rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .site-header__nav a:hover { color: var(--color-primary); }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      z-index: 1001;
+    }
+    .hamburger__line {
+      width: 24px;
+      height: 1px;
+      background: var(--color-text);
+      transition: transform 0.35s ease, opacity 0.35s ease;
+      display: block;
+    }
+    .hamburger.is-open .hamburger__line:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .hamburger.is-open .hamburger__line:nth-child(2) { opacity: 0; }
+    .hamburger.is-open .hamburger__line:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+    @media (max-width: 767px) {
+      .site-header__nav { display: none; }
+      .hamburger { display: flex; }
+    }
+
+    /* Mobile Menu */
+    .mobile-menu {
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      background: rgba(10, 10, 10, 0.97);
+      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s ease, visibility 0s 0.4s;
+    }
+    .mobile-menu.is-open {
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.4s ease;
+    }
+    .mobile-menu a {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 6vw, 2.5rem);
+      letter-spacing: 0.2em;
+      color: var(--color-text);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .mobile-menu a:hover { color: var(--color-primary); }
+
+    /* ============================================================
+       13. Buttons
+       ============================================================ */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.875rem 2rem;
+      min-height: 48px;
+      background: var(--color-primary);
+      color: #0a0a0a;
+      font-family: var(--font-label);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid var(--color-primary);
+      transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .btn-primary:hover {
+      background: var(--color-primary-pale);
+      box-shadow: var(--glow-primary);
+      transform: translateY(-1px);
+    }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.875rem 2rem;
+      min-height: 48px;
+      background: transparent;
+      color: var(--color-primary);
+      font-family: var(--font-label);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid var(--color-primary);
+      transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .btn-outline:hover {
+      background: rgba(201, 168, 76, 0.08);
+      box-shadow: var(--glow-primary);
+    }
+    .btn-primary--pulse {
+      animation: goldPulse 2.8s ease-in-out infinite;
+    }
+    @keyframes goldPulse {
+      0%, 100% { box-shadow: 0 0 6px rgba(201,168,76,0.35), 0 0 18px rgba(201,168,76,0.15); }
+      50%       { box-shadow: 0 0 10px rgba(201,168,76,0.55), 0 0 30px rgba(201,168,76,0.30), 0 0 60px rgba(201,168,76,0.12); }
+    }
+
+    /* ============================================================
+       14. Section Common
+       ============================================================ */
+    section { position: relative; }
+    .section-inner {
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: var(--space-section) var(--space-content);
+    }
+    .eyebrow {
+      display: block;
+      font-family: var(--font-label);
+      font-size: var(--fs-eyebrow);
+      letter-spacing: var(--ls-eyebrow);
+      text-transform: uppercase;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+    }
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: var(--fs-h2);
+      font-weight: 300;
+      letter-spacing: var(--ls-heading);
+      line-height: var(--lh-heading);
+      color: var(--color-text);
+      margin-bottom: 1.5rem;
+    }
+    .section-lead {
+      font-family: var(--font-body);
+      font-size: var(--fs-body);
+      letter-spacing: var(--ls-body);
+      line-height: var(--lh-body);
+      color: var(--color-text-muted);
+      max-width: 640px;
+    }
+
+    /* ============================================================
+       15. Hero Section
+       ============================================================ */
+    #hero {
+      position: relative;
+      min-height: 100svh;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      padding-bottom: clamp(3rem, 8vw, 6rem);
+      overflow: hidden;
+      text-align: center;
+      background-color: #0a0a0a;
+    }
+    .hero__video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+    @media (max-width: 767px) {
+      .hero__video { display: none; }
+      #hero {
+        background-image: url('./3.jpg');
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    .hero__overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(
+        to bottom,
+        rgba(10,10,10,0.30) 0%,
+        rgba(10,10,10,0.15) 40%,
+        rgba(10,10,10,0.65) 70%,
+        rgba(10,10,10,0.92) 100%
+      );
+    }
+    #hero.grain::after { z-index: 2; opacity: 0.14; }
+    .hero__content {
+      position: relative;
+      z-index: 3;
+      width: 100%;
+      max-width: 900px;
+      padding: 0 clamp(1.25rem, 5vw, 2.5rem);
+    }
+    .hero__eyebrow {
+      font-family: var(--font-label);
+      font-size: var(--fs-eyebrow);
+      letter-spacing: var(--ls-eyebrow);
+      text-transform: uppercase;
+      color: var(--color-primary);
+      margin-bottom: 1.25rem;
+      display: block;
+    }
+    .hero__title {
+      font-family: var(--font-heading);
+      font-size: var(--fs-hero);
+      font-weight: 300;
+      letter-spacing: var(--ls-heading);
+      line-height: var(--lh-display);
+      color: var(--color-text);
+      margin-bottom: 1.5rem;
+    }
+    .hero__sub {
+      font-family: var(--font-body);
+      font-size: clamp(0.875rem, 2vw, 1.0625rem);
+      letter-spacing: var(--ls-body);
+      line-height: var(--lh-body);
+      color: var(--color-text-muted);
+      margin-bottom: 2.5rem;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero__cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .hero__scroll-indicator {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      opacity: 0.5;
+      animation: scrollBounce 2.2s ease-in-out infinite;
+    }
+    .hero__scroll-indicator span {
+      font-size: 0.5rem;
+      letter-spacing: 0.5em;
+      text-transform: uppercase;
+      color: var(--color-text);
+    }
+    @keyframes scrollBounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50%       { transform: translateX(-50%) translateY(7px); }
+    }
+    .scroll-arrow {
+      width: 1px;
+      height: 32px;
+      background: linear-gradient(to bottom, var(--color-primary), transparent);
+    }
+
+    /* ============================================================
+       16. Concept Section
+       ============================================================ */
+    #concept {
+      background: var(--color-bg-mid);
+      overflow: hidden;
+    }
+    .concept__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(2rem, 6vw, 5rem);
+      align-items: center;
+    }
+    @media (max-width: 767px) {
+      .concept__grid { grid-template-columns: 1fr; }
+    }
+    .concept__text { max-width: 520px; }
+    .concept__title {
+      font-family: var(--font-heading);
+      font-size: var(--fs-h2);
+      font-weight: 300;
+      letter-spacing: var(--ls-heading);
+      line-height: var(--lh-heading);
+      color: var(--color-text);
+      margin-bottom: 1.75rem;
+    }
+    .concept__body {
+      font-family: var(--font-body);
+      font-size: var(--fs-body);
+      letter-spacing: var(--ls-body);
+      line-height: var(--lh-body);
+      color: var(--color-text-muted);
+      margin-bottom: 1.25rem;
+    }
+    .concept__subcatch {
+      font-family: var(--font-heading);
+      font-size: var(--fs-h3);
+      font-weight: 300;
+      letter-spacing: var(--ls-heading);
+      margin-top: 2rem;
+      color: var(--color-text);
+    }
+    .concept__image-wrap {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4 / 5;
+    }
+    .concept__image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s var(--ease-cinematic);
+    }
+    .concept__image-wrap:hover img { transform: scale(1.04); }
+    .concept__image-border {
+      position: absolute;
+      inset: 0;
+      border: 1px solid var(--color-border);
+      pointer-events: none;
+      z-index: 2;
+    }
+    .concept__photo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+    .concept__photo-item {
+      overflow: hidden;
+      aspect-ratio: 3 / 4;
+    }
+    .concept__photo-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.88) saturate(0.9);
+      transition: transform 0.8s var(--ease-cinematic), filter 0.6s ease;
+    }
+    .concept__photo-item:hover img {
+      transform: scale(1.05);
+      filter: brightness(0.95) saturate(1.0);
+    }
+    .contact__img-wrap {
+      margin: 0 auto 2.5rem;
+      max-width: 280px;
+    }
+    .contact__img-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    /* Reason cards */
+    .reason-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 4rem;
+    }
+    @media (max-width: 767px) {
+      .reason-grid { grid-template-columns: 1fr; }
+    }
+    .reason-card {
+      padding: clamp(1.5rem, 4vw, 2rem);
+      background: var(--glass-bg);
+      -webkit-backdrop-filter: blur(12px) saturate(1.3);
+      backdrop-filter: blur(12px) saturate(1.3);
+      border: var(--glass-border);
+      transition: border-color 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
+    }
+    .reason-card:hover {
+      border-color: var(--color-border-hover);
+      box-shadow: var(--glow-primary);
+      transform: translateY(-8px);
+    }
+    .reason-card__num {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      color: var(--color-primary);
+      opacity: 0.5;
+      letter-spacing: 0.1em;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    .reason-card__title {
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      line-height: var(--lh-heading);
+      color: var(--color-text);
+      margin-bottom: 0.75rem;
+    }
+    .reason-card__body {
+      font-family: var(--font-body);
+      font-size: var(--fs-small);
+      letter-spacing: var(--ls-body);
+      line-height: var(--lh-body);
+      color: var(--color-text-muted);
+    }
+
+    /* ============================================================
+       17. Price / System Section
+       ============================================================ */
+    #price {
+      background: var(--color-bg);
+      overflow: hidden;
+    }
+    .price-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 900px) {
+      .price-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .price-grid { grid-template-columns: 1fr; }
+    }
+    .price-card {
+      position: relative;
+      padding: clamp(1.5rem, 4vw, 2.5rem);
+      background: var(--glass-bg);
+      -webkit-backdrop-filter: blur(12px) saturate(1.3);
+      backdrop-filter: blur(12px) saturate(1.3);
+      border: var(--glass-border);
+      transition: border-color 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
+      overflow: hidden;
+    }
+    .price-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      opacity: 0.04;
+      mix-blend-mode: overlay;
+      pointer-events: none;
+    }
+    .price-card:hover {
+      border-color: var(--color-border-hover);
+      box-shadow: var(--glow-primary);
+      transform: translateY(-8px);
+    }
+    .price-card__deco {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg,
+        transparent 0%,
+        var(--color-primary) 30%,
+        var(--color-primary-pale) 50%,
+        var(--color-primary) 70%,
+        transparent 100%
+      );
+    }
+    .price-card__eyebrow {
+      font-family: var(--font-label);
+      font-size: var(--fs-eyebrow);
+      letter-spacing: var(--ls-eyebrow);
+      text-transform: uppercase;
+      color: var(--color-primary);
+      margin-bottom: 0.75rem;
+      position: relative;
+      z-index: 1;
+    }
+    .price-card__name {
+      font-family: var(--font-heading);
+      font-size: var(--fs-h3);
+      font-weight: 300;
+      letter-spacing: var(--ls-heading);
+      color: var(--color-text);
+      margin-bottom: 0.5rem;
+      line-height: var(--lh-heading);
+      position: relative;
+      z-index: 1;
+    }
+    .price-card__price {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 6vw, 3rem);
+      letter-spacing: 0.05em;
+      color: var(--color-primary);
+      line-height: 1.1;
+      margin: 0.75rem 0 0.5rem;
+      position: relative;
+      z-index: 1;
+    }
+    .price-card__note {
+      font-size: var(--fs-small);
+      color: var(--color-text-muted);
+      margin-top: 0.75rem;
+      line-height: var(--lh-body);
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ============================================================
+       18. Gallery Section
+       ============================================================ */
+    #gallery {
+      background: var(--color-bg-mid);
+      overflow: hidden;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      gap: 0.75rem;
+      margin-top: 3rem;
+    }
+    @media (max-width: 900px) {
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+    }
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      background: var(--color-bg-card);
+    }
+    .gallery-item--tall {
+      grid-row: span 2;
+    }
+    .gallery-item--wide {
+      grid-column: span 2;
+    }
+    @media (max-width: 900px) {
+      .gallery-item--tall { grid-row: span 1; }
+      .gallery-item--wide { grid-column: span 1; }
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: 4 / 3;
+      transition: transform 0.7s var(--ease-cinematic);
+    }
+    .gallery-item--tall img { aspect-ratio: 3 / 4; }
+    .gallery-item--wide img { aspect-ratio: 16 / 9; }
+    .gallery-item:hover img { transform: scale(1.06); }
+    .gallery-item__overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(10,10,10,0);
+      transition: background 0.4s ease;
+      pointer-events: none;
+    }
+    .gallery-item:hover .gallery-item__overlay {
+      background: rgba(10,10,10,0.25);
+    }
+
+    /* Gallery horizontal track for mobile */
+    .gallery-mobile-track {
+      display: none;
+    }
+    @media (max-width: 600px) {
+      .gallery-grid { display: none; }
+      .gallery-mobile-track { display: block; }
+    }
+
+    /* ============================================================
+       19. Access Section
+       ============================================================ */
+    #access {
+      background: var(--color-bg);
+      overflow: hidden;
+    }
+    .access__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(2rem, 6vw, 4rem);
+      align-items: start;
+    }
+    @media (max-width: 767px) {
+      .access__grid { grid-template-columns: 1fr; }
+    }
+    .access__map {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+    }
+    .access__map iframe {
+      display: block;
+      width: 100%;
+      height: 400px;
+      border: 0;
+      filter: invert(90%) hue-rotate(180deg);
+    }
+    @media (max-width: 767px) {
+      .access__map iframe { height: 280px; }
+    }
+    .access__info { padding-top: 0.5rem; }
+    .access__title {
+      font-family: var(--font-heading);
+      font-size: var(--fs-h2);
+      font-weight: 300;
+      letter-spacing: var(--ls-heading);
+      color: var(--color-text);
+      margin-bottom: 2rem;
+      line-height: var(--lh-heading);
+    }
+    .access__detail-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .access__detail-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--color-divider);
+    }
+    .access__detail-item:last-child { border-bottom: none; }
+    .access__detail-label {
+      font-family: var(--font-label);
+      font-size: 0.625rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--color-primary);
+      min-width: 72px;
+      padding-top: 0.15rem;
+    }
+    .access__detail-value {
+      font-family: var(--font-body);
+      font-size: var(--fs-body);
+      letter-spacing: var(--ls-body);
+      line-height: var(--lh-body);
+      color: var(--color-text);
+    }
+    .access__tel-link {
+      color: var(--color-primary);
+      text-decoration: none;
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      letter-spacing: 0.1em;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+    .access__tel-link:hover {
+      color: var(--color-primary-pale);
+      text-shadow: var(--glow-text);
+    }
+
+    /* ============================================================
+       20. Contact Section
+       ============================================================ */
+    #contact {
+      background: var(--color-bg-mid);
+      overflow: hidden;
+      text-align: center;
+    }
+    .contact__inner {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .contact__title {
+      font-family: var(--font-heading);
+      font-size: var(--fs-h2);
+      font-weight: 300;
+      letter-spacing: var(--ls-heading);
+      line-height: var(--lh-heading);
+      color: var(--color-text);
+      margin-bottom: 1rem;
+    }
+    .contact__lead {
+      font-size: var(--fs-body);
+      letter-spacing: var(--ls-body);
+      line-height: var(--lh-body);
+      color: var(--color-text-muted);
+      margin-bottom: 3rem;
+    }
+    .contact__tel {
+      display: block;
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 8vw, 4rem);
+      letter-spacing: 0.1em;
+      color: var(--color-primary);
+      margin-bottom: 0.5rem;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+    .contact__tel:hover {
+      color: var(--color-primary-pale);
+      text-shadow: var(--glow-text);
+    }
+    .contact__hours {
+      font-size: var(--fs-small);
+      letter-spacing: 0.2em;
+      color: var(--color-text-dim);
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+    }
+    .contact__buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .contact__insta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.875rem 2rem;
+      min-height: 48px;
+      border: 1px solid rgba(107, 26, 42, 0.6);
+      color: var(--color-text-muted);
+      font-family: var(--font-label);
+      font-size: 0.75rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: border-color 0.3s ease, color 0.3s ease, background 0.3s ease;
+      background: transparent;
+    }
+    .contact__insta-btn:hover {
+      border-color: var(--color-secondary);
+      color: var(--color-text);
+      background: rgba(107, 26, 42, 0.15);
+    }
+
+    /* FAQ */
+    .faq-list {
+      margin-top: 4rem;
+      text-align: left;
+    }
+    .faq-item {
+      border-bottom: 1px solid var(--color-divider);
+    }
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      padding: 1.25rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      font-family: var(--font-heading);
+      font-size: var(--fs-body);
+      font-weight: 400;
+      letter-spacing: var(--ls-body);
+      color: var(--color-text);
+      background: none;
+      border: none;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      transition: color 0.3s ease;
+    }
+    .faq-question:hover { color: var(--color-primary); }
+    .faq-question__icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      position: relative;
+    }
+    .faq-question__icon::before,
+    .faq-question__icon::after {
+      content: '';
+      position: absolute;
+      background: var(--color-primary);
+      transition: transform 0.35s ease, opacity 0.35s ease;
+    }
+    .faq-question__icon::before { width: 12px; height: 1px; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+    .faq-question__icon::after  { width: 1px; height: 12px; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+    .faq-item.open .faq-question__icon::after { transform: translate(-50%,-50%) rotate(90deg); opacity: 0; }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.45s var(--ease-cinematic);
+    }
+    .faq-item.open .faq-answer { max-height: 300px; }
+    .faq-answer p {
+      padding: 0 0 1.25rem;
+      font-size: var(--fs-body);
+      letter-spacing: var(--ls-body);
+      line-height: var(--lh-body);
+      color: var(--color-text-muted);
+    }
+
+    /* ============================================================
+       21. Footer
+       ============================================================ */
+    footer {
+      background: #050505;
+      border-top: 1px solid var(--color-divider);
+      padding: 4rem clamp(1.25rem, 5vw, 2.5rem) 2rem;
+    }
+    .footer__inner {
+      max-width: var(--container-width);
+      margin: 0 auto;
+    }
+    .footer__top {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid var(--color-divider);
+    }
+    @media (max-width: 767px) {
+      .footer__top { grid-template-columns: 1fr; gap: 2rem; }
+    }
+    .footer__brand .logo-text {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      letter-spacing: 0.25em;
+      color: var(--color-primary);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .footer__brand .logo-sub {
+      font-family: var(--font-body);
+      font-size: var(--fs-small);
+      letter-spacing: 0.15em;
+      color: var(--color-text-muted);
+    }
+    .footer__brand .footer__tagline {
+      margin-top: 1.25rem;
+      font-family: var(--font-heading);
+      font-size: var(--fs-small);
+      letter-spacing: 0.1em;
+      line-height: var(--lh-body);
+      color: var(--color-text-dim);
+    }
+    .footer__info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    @media (max-width: 600px) {
+      .footer__info-grid { grid-template-columns: 1fr; }
+    }
+    .footer__info-block h4 {
+      font-family: var(--font-label);
+      font-size: 0.625rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--color-primary);
+      margin-bottom: 0.75rem;
+    }
+    .footer__info-block p,
+    .footer__info-block address {
+      font-size: var(--fs-small);
+      letter-spacing: 0.05em;
+      line-height: var(--lh-body);
+      color: var(--color-text-muted);
+      font-style: normal;
+    }
+    .footer__sns {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .footer__sns a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border: 1px solid var(--color-border);
+      color: var(--color-text-muted);
+      transition: border-color 0.3s ease, color 0.3s ease;
+    }
+    .footer__sns a:hover {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+    }
+    .footer__bottom {
+      padding-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .footer__copyright {
+      font-size: 0.6875rem;
+      letter-spacing: 0.1em;
+      color: var(--color-text-dim);
+    }
+    .footer__photo-credit {
+      font-size: 0.625rem;
+      color: var(--color-text-dim);
+    }
+    .footer__nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .footer__nav a {
+      font-family: var(--font-label);
+      font-size: 0.625rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--color-text-dim);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .footer__nav a:hover { color: var(--color-primary); }
+
+    /* ============================================================
+       22. Floating Mobile CTA
+       ============================================================ */
+    .floating-cta {
+      display: none;
+    }
+    @media (max-width: 767px) {
+      .floating-cta {
+        display: flex;
+        position: fixed;
+        bottom: 0; left: 0; right: 0;
+        z-index: 998;
+        background: rgba(10, 10, 10, 0.95);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        border-top: 1px solid var(--color-border);
+        padding: 0.75rem 1.25rem;
+        padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+        gap: 0.75rem;
+        transform: translateY(100%);
+        transition: transform 0.45s var(--ease-cinematic);
+      }
+      .floating-cta.is-visible { transform: translateY(0); }
+      .floating-cta__tel {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1rem;
+        min-height: 48px;
+        background: var(--color-primary);
+        color: #0a0a0a;
+        font-family: var(--font-label);
+        font-size: 0.75rem;
+        letter-spacing: 0.15em;
+        text-decoration: none;
+        font-weight: 600;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .floating-cta__insta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border: 1px solid var(--color-border);
+        color: var(--color-text-muted);
+        text-decoration: none;
+        transition: border-color 0.3s ease, color 0.3s ease;
+        -webkit-tap-highlight-color: transparent;
+        flex-shrink: 0;
+      }
+    }
+
+    /* ============================================================
+       23. prefers-reduced-motion
+       ============================================================ */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      [data-clip] .clip-inner,
+      [data-warp],
+      [data-fade],
+      [data-stagger] .s-word .s-inner {
+        clip-path: none !important;
+        transform: none !important;
+        opacity: 1 !important;
+      }
+    }
+
+    /* ============================================================
+       24. Misc utilities
+       ============================================================ */
+    .sr-only {
+      position: absolute;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
+    }
+    .mb-0 { margin-bottom: 0 !important; }
+    .text-center { text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- ====================================================
+       LOADER
+       ==================================================== -->
+  <div id="loader" aria-hidden="true" role="presentation">
+    <div class="loader__title"><span>Nagomi</span></div>
+    <div class="loader__bar"></div>
+    <p class="loader__sub">Lounge Nagomi</p>
+  </div>
+
+  <!-- ====================================================
+       CUSTOM CURSOR
+       ==================================================== -->
+  <div id="cursor" aria-hidden="true">
+    <div class="cursor__ring"></div>
+    <div class="cursor__dot"></div>
+  </div>
+
+  <!-- ====================================================
+       HEADER
+       ==================================================== -->
+  <header class="site-header" id="site-header">
+    <a href="#hero" class="site-header__logo" aria-label="Lounge Nagomi トップへ">Nagomi</a>
+
+    <nav class="site-header__nav" aria-label="グローバルナビゲーション">
+      <a href="#concept">Concept</a>
+      <a href="#price">Price</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#access">Access</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger-btn" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobile-menu">
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+    </button>
+  </header>
+
+  <!-- ====================================================
+       MOBILE MENU
+       ==================================================== -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="モバイルメニュー">
+    <a href="#concept">Concept</a>
+    <a href="#price">Price</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#access">Access</a>
+    <a href="#contact">Contact</a>
+    <a href="tel:088-622-5518" style="color:var(--color-primary); font-size:1rem; letter-spacing:0.2em;">088-622-5518</a>
+  </nav>
+
+  <main>
+
+    <!-- ====================================================
+         HERO
+         ==================================================== -->
+    <section id="hero" class="grain" aria-label="ヒーローセクション">
+      <video
+        class="hero__video"
+        src="./lounge_nagomi_glamorous.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        aria-hidden="true"
+      ></video>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <span class="hero__eyebrow" data-stagger>Lounge Nagomi — Tokushima</span>
+
+        <h1 class="hero__title">
+          <span data-clip class="h1-line"><span class="clip-inner">なごみで、</span></span>
+          <span data-clip data-delay="1" class="h1-line"><span class="clip-inner">夜が変わる。</span></span>
+        </h1>
+
+        <p class="hero__sub" data-fade data-delay="2">
+          上品で落ち着いた、大人のためのラウンジ。<br>はじめての方も、ゆっくりとお寛ぎください。
+        </p>
+
+        <p style="font-family:var(--font-body);font-size:var(--fs-small);letter-spacing:0.2em;color:var(--color-primary);margin-bottom:1.5rem;opacity:0.9;" data-fade data-delay="3">
+          本日の空席確認はお電話で ／ 当日予約もお気軽に
+        </p>
+
+        <div class="hero__cta" data-fade data-delay="4">
+          <a href="tel:088-622-5518" class="btn-primary btn-primary--pulse">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            予約・お問い合わせ
+          </a>
+          <a href="https://www.instagram.com/loung_nagomi/" target="_blank" rel="noopener noreferrer" class="btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+            </svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ====================================================
+         CONCEPT
+         ==================================================== -->
+    <section id="concept" class="grain">
+      <div class="section-inner">
+        <div class="concept__grid">
+          <div class="concept__text">
+            <span class="eyebrow" data-stagger>Our Concept</span>
+            <div class="deco-line deco-line--left"></div>
+
+            <h2 class="concept__title" data-warp>
+              「なごみ」という<br>
+              <span class="text-gold-shimmer">名の場所</span>
+            </h2>
+
+            <p class="concept__body" data-fade data-delay="1">
+              徳島・富田町に佇むラウンジ なごみ。
+            </p>
+            <p class="concept__body" data-fade data-delay="2">
+              華やかすぎず、かといって飾らなすぎない。<br>
+              ほっとできる空気と、上質な時間が流れる<br>
+              夜の場所です。
+            </p>
+            <p class="concept__body" data-fade data-delay="3">
+              女性おひとりでも、カップルでも、<br>
+              仕事仲間とでも。<br>
+              どなたでも、気負わずお越しください。
+            </p>
+
+            <p class="concept__subcatch" data-fade data-delay="4">
+              <span class="text-gold">徳島の夜に、ほっとできる場所。</span>
+            </p>
+          </div>
+
+          <div>
+            <div class="concept__photo-grid">
+              <div class="concept__photo-item" data-fade>
+                <img src="./2.jpg" alt="Lounge Nagomi の外観・エントランス" loading="lazy">
+              </div>
+              <div class="concept__photo-item" data-fade data-delay="1">
+                <img src="./3.jpg" alt="Lounge Nagomi の店内雰囲気" loading="lazy">
+              </div>
+              <div class="concept__photo-item" data-fade data-delay="2">
+                <img src="./4.jpg" alt="Lounge Nagomi の落ち着いた照明空間" loading="lazy">
+              </div>
+              <div class="concept__photo-item" data-fade data-delay="3">
+                <img src="./5.jpg" alt="Lounge Nagomi の上品なインテリア" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reason cards -->
+        <div class="reason-grid">
+          <div class="reason-card" data-fade data-delay="1">
+            <p class="reason-card__num">01</p>
+            <h3 class="reason-card__title">入りやすい雰囲気づくり</h3>
+            <p class="reason-card__body">女性のお客様・カップルのお客様も安心してお越しいただけるよう、落ち着いた上品な空間を大切にしています。</p>
+          </div>
+          <div class="reason-card" data-fade data-delay="2">
+            <p class="reason-card__num">02</p>
+            <h3 class="reason-card__title">明確な料金でご案内</h3>
+            <p class="reason-card__body">セット料金5,000円を明示しています。ご不明な点はご来店前にお電話にてお気軽にご確認いただけます。</p>
+          </div>
+          <div class="reason-card" data-fade data-delay="3">
+            <p class="reason-card__num">03</p>
+            <h3 class="reason-card__title">徳島に根ざしたラウンジ</h3>
+            <p class="reason-card__body">2021年6月のオープン以来、地元の皆さまとともに歩んできた、徳島・富田町のラウンジです。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ====================================================
+         PRICE / SYSTEM
+         ==================================================== -->
+    <section id="price" class="grain">
+      <div class="section-inner">
+        <div class="text-center">
+          <span class="eyebrow" data-stagger>Price &amp; Hours</span>
+          <div class="deco-line"></div>
+          <h2 class="section-title" data-warp>ご利用案内</h2>
+          <p class="section-lead" data-fade data-delay="1" style="margin: 0 auto 0;">
+            透明な料金でお迎えします。詳細はお気軽にお電話にてご確認ください。
+          </p>
+          <p style="font-family:var(--font-body);font-size:var(--fs-small);letter-spacing:0.15em;color:var(--color-primary);margin-top:1rem;" data-fade data-delay="2">
+            当日予約 OK ／ 本日の空席確認は <a href="tel:088-622-5518" style="color:var(--color-primary);border-bottom:1px solid rgba(201,168,76,0.4);">088-622-5518</a> まで
+          </p>
+        </div>
+
+        <div class="price-grid">
+          <!-- Card 1: Set fee -->
+          <div class="price-card" data-warp data-delay="1">
+            <div class="price-card__deco" aria-hidden="true"></div>
+            <p class="price-card__eyebrow">Set Fee</p>
+            <h3 class="price-card__name">セット料金</h3>
+            <p class="price-card__price">¥5,000</p>
+            <p class="price-card__note">
+              セット料金5,000円にてご利用いただけます。<br>
+              内容の詳細についてはお電話（<a href="tel:088-622-5518" style="color:var(--color-primary);">088-622-5518</a>）にてご確認ください。
+            </p>
+          </div>
+
+          <!-- Card 2: Nomihoudai -->
+          <div class="price-card" data-warp data-delay="2">
+            <div class="price-card__deco" aria-hidden="true"></div>
+            <p class="price-card__eyebrow">Drinks</p>
+            <h3 class="price-card__name">飲み放題コース</h3>
+            <p class="price-card__price" style="font-size:clamp(1.25rem,3vw,1.75rem); padding-top:0.5rem;">コースあり</p>
+            <p class="price-card__note">
+              飲み放題コースをご用意しています。コースの内容・価格はお電話（<a href="tel:088-622-5518" style="color:var(--color-primary);">088-622-5518</a>）または来店時にご確認ください。
+            </p>
+          </div>
+
+          <!-- Card 3: Hours -->
+          <div class="price-card" data-warp data-delay="3">
+            <div class="price-card__deco" aria-hidden="true"></div>
+            <p class="price-card__eyebrow">Open Hours</p>
+            <h3 class="price-card__name">営業時間</h3>
+            <p class="price-card__price" style="font-size:clamp(1.1rem,2.5vw,1.5rem); padding-top:0.5rem;">月〜土<br>20:00 — 翌1:00</p>
+            <p class="price-card__note">
+              日曜日は定休日です。<br>
+              お仕事帰りや夜の特別なひとときにぜひどうぞ。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ====================================================
+         GALLERY
+         ==================================================== -->
+    <section id="gallery">
+      <div class="section-inner">
+        <div class="text-center">
+          <span class="eyebrow" data-stagger>Gallery</span>
+          <div class="deco-line"></div>
+          <h2 class="section-title" data-warp>ラウンジ なごみの夜</h2>
+          <p class="section-lead" data-fade data-delay="1" style="margin:0 auto 3rem;">
+            落ち着いた照明と穏やかな音楽が流れる空間。日常から少し離れた、大人のための夜時間をご用意しています。
+          </p>
+        </div>
+
+        <!-- Desktop / Tablet grid -->
+        <div class="gallery-grid" aria-label="ギャラリー">
+          <div class="gallery-item gallery-item--tall" data-warp>
+            <img src="./6.png" alt="Lounge Nagomi の店内雰囲気 — 落ち着いた照明" loading="lazy">
+            <div class="gallery-item__overlay" aria-hidden="true"></div>
+          </div>
+          <div class="gallery-item" data-fade data-delay="1">
+            <img src="./7.png" alt="Lounge Nagomi の店内空間" loading="lazy">
+            <div class="gallery-item__overlay" aria-hidden="true"></div>
+          </div>
+          <div class="gallery-item" data-fade data-delay="2">
+            <img src="./8.png" alt="Lounge Nagomi のインテリア" loading="lazy">
+            <div class="gallery-item__overlay" aria-hidden="true"></div>
+          </div>
+          <div class="gallery-item gallery-item--wide" data-warp data-delay="1">
+            <img src="./9.png" alt="Lounge Nagomi の上品な空間" loading="lazy">
+            <div class="gallery-item__overlay" aria-hidden="true"></div>
+          </div>
+          <div class="gallery-item" data-fade data-delay="3">
+            <img src="./10.png" alt="Lounge Nagomi の夜の雰囲気" loading="lazy">
+            <div class="gallery-item__overlay" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <!-- Mobile: horizontal scroll track -->
+        <div class="gallery-mobile-track">
+          <div class="h-track-wrap">
+            <p class="h-track__hint" aria-hidden="true">
+              ← スワイプ →
+            </p>
+            <div class="h-track" role="list" aria-label="ギャラリー（横スクロール）">
+              <div class="h-track-card" role="listitem">
+                <img src="./6.png" alt="Lounge Nagomi の店内雰囲気 — 落ち着いた照明" loading="lazy" style="width:100%;height:260px;object-fit:cover;">
+              </div>
+              <div class="h-track-card" role="listitem">
+                <img src="./7.png" alt="Lounge Nagomi の店内空間" loading="lazy" style="width:100%;height:260px;object-fit:cover;">
+              </div>
+              <div class="h-track-card" role="listitem">
+                <img src="./8.png" alt="Lounge Nagomi のインテリア" loading="lazy" style="width:100%;height:260px;object-fit:cover;">
+              </div>
+              <div class="h-track-card" role="listitem">
+                <img src="./9.png" alt="Lounge Nagomi の上品な空間" loading="lazy" style="width:100%;height:260px;object-fit:cover;">
+              </div>
+              <div class="h-track-card" role="listitem">
+                <img src="./10.png" alt="Lounge Nagomi の夜の雰囲気" loading="lazy" style="width:100%;height:260px;object-fit:cover;">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instagram link -->
+        <div style="text-align:center; margin-top:3rem;" data-fade>
+          <p style="font-family:var(--font-heading);font-size:var(--fs-small);letter-spacing:0.15em;color:var(--color-text-muted);margin-bottom:1rem;">最新情報・店内の雰囲気は Instagram でご覧いただけます</p>
+          <a href="https://www.instagram.com/loung_nagomi/" target="_blank" rel="noopener noreferrer" class="btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+            </svg>
+            @loung_nagomi
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ====================================================
+         ACCESS
+         ==================================================== -->
+    <section id="access">
+      <div class="section-inner">
+        <span class="eyebrow" data-stagger>Access</span>
+        <div class="deco-line deco-line--left"></div>
+
+        <div class="access__grid">
+          <div data-warp>
+            <div class="access__map">
+              <iframe
+                src="https://maps.google.com/maps?q=徳島県徳島市富田町2丁目9+アクティーファイブ&hl=ja&z=17&output=embed"
+                title="Lounge Nagomi の地図"
+                width="100%"
+                height="400"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="access__info" data-fade data-delay="1">
+            <h2 class="access__title">ご来店案内</h2>
+
+            <ul class="access__detail-list">
+              <li class="access__detail-item">
+                <span class="access__detail-label">住所</span>
+                <address class="access__detail-value">
+                  〒770-0915<br>
+                  徳島県徳島市富田町2丁目9<br>
+                  アクティーファイブ 2階
+                </address>
+              </li>
+              <li class="access__detail-item">
+                <span class="access__detail-label">最寄り</span>
+                <span class="access__detail-value">JR徳島駅より近接</span>
+              </li>
+              <li class="access__detail-item">
+                <span class="access__detail-label">営業時間</span>
+                <span class="access__detail-value">月〜土　20:00 〜 翌1:00<br><span style="color:var(--color-text-dim);font-size:var(--fs-small);">日曜日 定休</span></span>
+              </li>
+              <li class="access__detail-item">
+                <span class="access__detail-label">電話</span>
+                <span class="access__detail-value">
+                  <a href="tel:088-622-5518" class="access__tel-link">088-622-5518</a>
+                </span>
+              </li>
+            </ul>
+
+            <div style="margin-top:2rem; display:flex; flex-wrap:wrap; gap:1rem;">
+              <a href="tel:088-622-5518" class="btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+                電話で問い合わせ
+              </a>
+              <a href="https://maps.google.com/maps?q=徳島県徳島市富田町2丁目9+アクティーファイブ&hl=ja" target="_blank" rel="noopener noreferrer" class="btn-outline">
+                地図を開く
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ====================================================
+         CONTACT
+         ==================================================== -->
+    <section id="contact" class="grain">
+      <div class="section-inner">
+        <div class="contact__inner">
+          <span class="eyebrow" data-stagger>Contact</span>
+          <div class="deco-line"></div>
+
+          <h2 class="contact__title" data-warp>まずはお気軽に<br>ご連絡を</h2>
+
+          <div class="contact__img-wrap" data-fade>
+            <img src="./1.jpg" alt="Lounge Nagomi" loading="lazy">
+          </div>
+
+          <p class="contact__lead" data-fade data-delay="1">
+            ご予約・料金のご確認・その他お問い合わせは、<br>
+            お電話にていつでもお受けしています。
+          </p>
+
+          <p style="font-family:var(--font-body);font-size:var(--fs-small);letter-spacing:0.2em;color:var(--color-primary);margin-bottom:1.5rem;opacity:0.9;" data-fade data-delay="2">
+            本日の空席確認はお電話で ／ 当日予約もお気軽にどうぞ
+          </p>
+
+          <a href="tel:088-622-5518" class="contact__tel" data-warp>088-622-5518</a>
+          <p class="contact__hours" data-fade>日曜定休 ／ 月〜土 20:00〜翌1:00</p>
+
+          <div class="contact__buttons" data-fade data-delay="2">
+            <a href="tel:088-622-5518" class="btn-primary btn-primary--pulse">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+              電話で問い合わせ
+            </a>
+            <a href="https://www.instagram.com/loung_nagomi/" target="_blank" rel="noopener noreferrer" class="contact__insta-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+              </svg>
+              Instagram DM
+            </a>
+          </div>
+
+          <!-- FAQ -->
+          <div class="faq-list" aria-label="よくあるご質問" data-fade>
+            <h3 style="font-family:var(--font-heading);font-size:var(--fs-h3);font-weight:300;letter-spacing:var(--ls-heading);color:var(--color-text);margin-bottom:2rem;text-align:center;">よくあるご質問</h3>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                はじめてラウンジを訪れますが、入りやすいですか？
+                <span class="faq-question__icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>はい、はじめての方も歓迎しています。ご不安な点はご来店前にお電話（088-622-5518）でお気軽にご相談ください。</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                女性ひとり、またはカップルでも大丈夫ですか？
+                <span class="faq-question__icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>もちろんです。女性のお客様・カップルのお客様も歓迎しています。落ち着いた雰囲気でお迎えします。</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                料金はいくらですか？
+                <span class="faq-question__icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>セット料金は5,000円です。飲み放題コースもご用意しています。詳細はお電話（088-622-5518）にてご確認いただけます。</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                予約は必要ですか？
+                <span class="faq-question__icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>ご予約をいただくとスムーズにご案内できます。お電話（088-622-5518）にてお気軽にご連絡ください。</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                駐車場はありますか？
+                <span class="faq-question__icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>駐車場については、お電話（088-622-5518）にてご確認ください。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================
+       FOOTER
+       ==================================================== -->
+  <footer>
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="logo-text">Nagomi</span>
+          <span class="logo-sub">ラウンジ なごみ</span>
+          <p class="footer__tagline">徳島の夜に、ほっとできる場所。<br>— Lounge Nagomi</p>
+
+          <div class="footer__sns" aria-label="SNSリンク">
+            <a href="https://www.instagram.com/loung_nagomi/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @loung_nagomi">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/channel/UCgENyi1s6YYiiZ-xgAL_8Og" target="_blank" rel="noopener noreferrer" aria-label="YouTube チャンネル">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__info-grid">
+          <div class="footer__info-block">
+            <h4>Access</h4>
+            <address>
+              〒770-0915<br>
+              徳島県徳島市富田町2丁目9<br>
+              アクティーファイブ 2階
+            </address>
+          </div>
+          <div class="footer__info-block">
+            <h4>Hours</h4>
+            <p>月〜土　20:00 〜 翌1:00<br>日曜日 定休</p>
+            <p style="margin-top:1rem;"><a href="tel:088-622-5518" style="color:var(--color-primary);text-decoration:none;letter-spacing:0.1em;">088-622-5518</a></p>
+          </div>
+          <div class="footer__info-block">
+            <h4>Navigation</h4>
+            <nav class="footer__nav" aria-label="フッターナビゲーション">
+              <a href="#concept">Concept</a>
+              <a href="#price">Price</a>
+              <a href="#gallery">Gallery</a>
+              <a href="#access">Access</a>
+              <a href="#contact">Contact</a>
+            </nav>
+          </div>
+          <div class="footer__info-block">
+            <h4>SNS</h4>
+            <p><a href="https://www.instagram.com/loung_nagomi/" target="_blank" rel="noopener noreferrer" style="color:var(--color-primary);">@loung_nagomi</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2021–2026 Lounge Nagomi. All Rights Reserved.</p>
+        <p class="footer__photo-credit">Photos: Client provided assets</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================
+       FLOATING MOBILE CTA
+       ==================================================== -->
+  <div class="floating-cta" id="floating-cta" aria-label="お問い合わせ">
+    <a href="tel:088-622-5518" class="floating-cta__tel">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+      </svg>
+      <span>本日空席確認・当日予約 OK</span>
+    </a>
+    <a href="https://www.instagram.com/loung_nagomi/" target="_blank" rel="noopener noreferrer" class="floating-cta__insta" aria-label="Instagram">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+      </svg>
+    </a>
+  </div>
+
+  <script>
+    (function () {
+      'use strict';
+
+      /* ============================================================
+         1. Word Stagger — split text into spans immediately
+         ============================================================ */
+      document.querySelectorAll('[data-stagger]').forEach(function (el) {
+        var text = el.textContent.trim();
+        // For Japanese text treat each character as a unit, for spaced text split by space
+        var tokens = text.split('');
+        var html = '';
+        var idx = 0;
+        tokens.forEach(function (char) {
+          if (char === ' ' || char === '　') {
+            html += '<span style="display:inline-block;width:0.3em"></span>';
+          } else {
+            var delay = (idx * 0.05).toFixed(2);
+            html += '<span class="s-word" style="transition-delay:' + delay + 's"><span class="s-inner">' + char + '</span></span>';
+            idx++;
+          }
+        });
+        el.innerHTML = html;
+      });
+
+      /* ============================================================
+         2. IntersectionObserver — scroll reveal (exclude #hero)
+         ============================================================ */
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+      document.querySelectorAll('[data-warp], [data-fade], [data-clip], [data-stagger]').forEach(function (el) {
+        if (!el.closest('#hero')) {
+          observer.observe(el);
+        }
+      });
+
+      /* ============================================================
+         3. Loader control
+         ============================================================ */
+      var loaderStart = Date.now();
+      var MIN_LOADER = 2200;
+      var loader = document.getElementById('loader');
+
+      function triggerHeroAnimations() {
+        var heroEls = document.querySelectorAll('#hero [data-clip], #hero [data-stagger], #hero [data-fade]');
+        heroEls.forEach(function (el, i) {
+          setTimeout(function () { el.classList.add('is-visible'); }, i * 120);
+        });
+      }
+
+      function dismissLoader() {
+        var elapsed = Date.now() - loaderStart;
+        var wait = Math.max(0, MIN_LOADER - elapsed);
+        setTimeout(function () {
+          loader.classList.add('is-done');
+          document.body.classList.add('loaded');
+          triggerHeroAnimations();
+        }, wait);
+      }
+
+      if (document.readyState === 'complete') {
+        dismissLoader();
+      } else {
+        window.addEventListener('load', dismissLoader);
+      }
+
+      /* ============================================================
+         4. Custom Cursor (pointer: fine only)
+         ============================================================ */
+      if (window.matchMedia('(pointer: fine)').matches) {
+        var ring = document.querySelector('.cursor__ring');
+        var dot  = document.querySelector('.cursor__dot');
+        var mx = 0, my = 0, rx = 0, ry = 0;
+
+        document.addEventListener('mousemove', function (e) {
+          mx = e.clientX;
+          my = e.clientY;
+          dot.style.left = mx + 'px';
+          dot.style.top  = my + 'px';
+        });
+
+        (function raf() {
+          rx += (mx - rx) * 0.12;
+          ry += (my - ry) * 0.12;
+          ring.style.left = rx + 'px';
+          ring.style.top  = ry + 'px';
+          requestAnimationFrame(raf);
+        })();
+
+        document.querySelectorAll('a, button, [role="button"]').forEach(function (el) {
+          el.addEventListener('mouseenter', function () { document.body.classList.add('cursor-hover'); });
+          el.addEventListener('mouseleave', function () { document.body.classList.remove('cursor-hover'); });
+        });
+        document.addEventListener('mousedown', function () { document.body.classList.add('cursor-click'); });
+        document.addEventListener('mouseup',   function () { document.body.classList.remove('cursor-click'); });
+      }
+
+      /* ============================================================
+         5. Header scroll change
+         ============================================================ */
+      var header = document.getElementById('site-header');
+      window.addEventListener('scroll', function () {
+        header.classList.toggle('is-scrolled', window.scrollY > 60);
+      }, { passive: true });
+
+      /* ============================================================
+         6. Hamburger menu
+         ============================================================ */
+      var hamburgerBtn = document.getElementById('hamburger-btn');
+      var mobileMenu   = document.getElementById('mobile-menu');
+
+      if (hamburgerBtn && mobileMenu) {
+        hamburgerBtn.addEventListener('click', function () {
+          var isOpen = hamburgerBtn.classList.toggle('is-open');
+          mobileMenu.classList.toggle('is-open', isOpen);
+          hamburgerBtn.setAttribute('aria-expanded', String(isOpen));
+          document.body.style.overflow = isOpen ? 'hidden' : '';
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(function (a) {
+          a.addEventListener('click', function () {
+            hamburgerBtn.classList.remove('is-open');
+            mobileMenu.classList.remove('is-open');
+            hamburgerBtn.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+          });
+        });
+      }
+
+      /* ============================================================
+         7. Smooth scroll for anchor links
+         ============================================================ */
+      document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+        a.addEventListener('click', function (e) {
+          var href = a.getAttribute('href');
+          if (href === '#') return;
+          var target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            var headerH = header ? header.getBoundingClientRect().height : 0;
+            var top = target.getBoundingClientRect().top + window.scrollY - headerH;
+            window.scrollTo({ top: top, behavior: 'smooth' });
+          }
+        });
+      });
+
+      /* ============================================================
+         8. Horizontal scroll drag (.h-track)
+         ============================================================ */
+      document.querySelectorAll('.h-track').forEach(function (track) {
+        var isDown = false, startX = 0, scrollStart = 0;
+
+        track.addEventListener('mousedown', function (e) {
+          isDown = true;
+          track.classList.add('is-dragging');
+          startX = e.pageX - track.offsetLeft;
+          scrollStart = track.scrollLeft;
+        });
+        document.addEventListener('mouseup', function () {
+          isDown = false;
+          track.classList.remove('is-dragging');
+        });
+        track.addEventListener('mouseleave', function () { isDown = false; });
+        track.addEventListener('mousemove', function (e) {
+          if (!isDown) return;
+          e.preventDefault();
+          var x = e.pageX - track.offsetLeft;
+          track.scrollLeft = scrollStart - (x - startX) * 1.5;
+        });
+      });
+
+      /* ============================================================
+         9. Floating mobile CTA show after scroll
+         ============================================================ */
+      var floatingCta = document.getElementById('floating-cta');
+      if (floatingCta) {
+        window.addEventListener('scroll', function () {
+          floatingCta.classList.toggle('is-visible', window.scrollY > 200);
+        }, { passive: true });
+      }
+
+      /* ============================================================
+         10. FAQ accordion
+         ============================================================ */
+      document.querySelectorAll('.faq-item').forEach(function (item) {
+        var btn    = item.querySelector('.faq-question');
+        var answer = item.querySelector('.faq-answer');
+        if (!btn || !answer) return;
+
+        btn.addEventListener('click', function () {
+          var isOpen = item.classList.contains('open');
+
+          // Close all
+          document.querySelectorAll('.faq-item.open').forEach(function (o) {
+            o.classList.remove('open');
+            var q = o.querySelector('.faq-question');
+            var a = o.querySelector('.faq-answer');
+            if (q) q.setAttribute('aria-expanded', 'false');
+            if (a) a.hidden = true;
+          });
+
+          // Open clicked if it was closed
+          if (!isOpen) {
+            item.classList.add('open');
+            btn.setAttribute('aria-expanded', 'true');
+            answer.hidden = false;
+          }
+        });
+      });
+
+    })();
+  </script>
+
+</body>
+</html>
