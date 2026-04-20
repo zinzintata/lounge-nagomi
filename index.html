@@ -717,13 +717,10 @@
       object-fit: cover;
       z-index: 0;
     }
+    .hero__video--mobile { display: none; }
     @media (max-width: 767px) {
-      .hero__video { display: none; }
-      #hero {
-        background-image: url('./3.jpg');
-        background-size: cover;
-        background-position: center;
-      }
+      .hero__video--desktop { display: none; }
+      .hero__video--mobile { display: block; }
     }
     .hero__overlay {
       position: absolute;
@@ -1596,8 +1593,19 @@
          ==================================================== -->
     <section id="hero" class="grain" aria-label="ヒーローセクション">
       <video
-        class="hero__video"
+        class="hero__video hero__video--desktop"
         src="./lounge_nagomi_glamorous.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        aria-hidden="true"
+      ></video>
+      <video
+        class="hero__video hero__video--mobile"
+        src="./lounge_nagomi_mobile.mp4"
+        poster="./3.jpg"
         autoplay
         muted
         loop
