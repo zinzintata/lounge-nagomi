@@ -1602,17 +1602,12 @@
         preload="metadata"
         aria-hidden="true"
       ></video>
-      <video
+      <img
         class="hero__video hero__video--mobile"
-        src="./lounge_nagomi_mobile.mp4"
-        poster="./3.jpg"
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="metadata"
+        src="./hero_mobile.jpg"
+        alt=""
         aria-hidden="true"
-      ></video>
+      />
       <div class="hero__overlay" aria-hidden="true"></div>
 
       <div class="hero__content">
@@ -2177,35 +2172,16 @@
       }
 
       function playHeroVideo() {
-        var isMobile = window.matchMedia('(max-width: 767px)').matches;
-        var activeVideo = document.querySelector(isMobile ? '.hero__video--mobile' : '.hero__video--desktop');
-        var inactiveVideo = document.querySelector(isMobile ? '.hero__video--desktop' : '.hero__video--mobile');
-        if (inactiveVideo) {
-          inactiveVideo.pause();
-          inactiveVideo.removeAttribute('autoplay');
-          inactiveVideo.removeAttribute('src');
-          inactiveVideo.load();
-        }
-        if (activeVideo) {
-          activeVideo.muted = true;
-          activeVideo.playsInline = true;
-          var tryPlay = function () {
-            var p = activeVideo.play();
-            if (p && typeof p.catch === 'function') {
-              p.catch(function () {
-                var resume = function () {
-                  activeVideo.play().catch(function () {});
-                  document.removeEventListener('touchstart', resume);
-                  document.removeEventListener('click', resume);
-                };
-                document.addEventListener('touchstart', resume, { once: true, passive: true });
-                document.addEventListener('click', resume, { once: true });
-              });
-            }
-          };
-          if (activeVideo.readyState >= 2) { tryPlay(); }
-          else { activeVideo.addEventListener('loadeddata', tryPlay, { once: true }); }
-        }
+        var video = document.querySelector('.hero__video--desktop');
+        if (!video) return;
+        video.muted = true;
+        video.playsInline = true;
+        var tryPlay = function () {
+          var p = video.play();
+          if (p && typeof p.catch === 'function') { p.catch(function () {}); }
+        };
+        if (video.readyState >= 2) { tryPlay(); }
+        else { video.addEventListener('loadeddata', tryPlay, { once: true }); }
       }
 
       function dismissLoader() {
