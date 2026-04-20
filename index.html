@@ -2176,6 +2176,38 @@
         });
       }
 
+      function playHeroVideo() {
+        var isMobile = window.matchMedia('(max-width: 767px)').matches;
+        var activeVideo = document.querySelector(isMobile ? '.hero__video--mobile' : '.hero__video--desktop');
+        var inactiveVideo = document.querySelector(isMobile ? '.hero__video--desktop' : '.hero__video--mobile');
+        if (inactiveVideo) {
+          inactiveVideo.pause();
+          inactiveVideo.removeAttribute('autoplay');
+          inactiveVideo.removeAttribute('src');
+          inactiveVideo.load();
+        }
+        if (activeVideo) {
+          activeVideo.muted = true;
+          activeVideo.playsInline = true;
+          var tryPlay = function () {
+            var p = activeVideo.play();
+            if (p && typeof p.catch === 'function') {
+              p.catch(function () {
+                var resume = function () {
+                  activeVideo.play().catch(function () {});
+                  document.removeEventListener('touchstart', resume);
+                  document.removeEventListener('click', resume);
+                };
+                document.addEventListener('touchstart', resume, { once: true, passive: true });
+                document.addEventListener('click', resume, { once: true });
+              });
+            }
+          };
+          if (activeVideo.readyState >= 2) { tryPlay(); }
+          else { activeVideo.addEventListener('loadeddata', tryPlay, { once: true }); }
+        }
+      }
+
       function dismissLoader() {
         var elapsed = Date.now() - loaderStart;
         var wait = Math.max(0, MIN_LOADER - elapsed);
@@ -2183,6 +2215,7 @@
           loader.classList.add('is-done');
           document.body.classList.add('loaded');
           triggerHeroAnimations();
+          playHeroVideo();
         }, wait);
       }
 
